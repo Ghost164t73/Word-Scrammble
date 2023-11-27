@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button onclick="
+         const randomMove = Math.random();
+
+         let computerMove = ''
+        if (randomMove > 0 && randomMove < 1/3) {
+            computerMove = 'rock'
+        } else if ( randomMove > 1/3 && randomMove < 2/3) {
+            computerMove = 'scissors'
+        } else if( randomMove > 2/3 && randomMove < 1){
+            computerMove = 'paper'
+        }
+
+        let result = ''
+
+        if( computerMove === 'rock') {
+            result='Its a tie'
+        }else if (computerMove === 'scissors') {
+            result='You Win'
+        }else if(computerMove === 'paper') {
+            result='You lose'
+        }
+
+        alert(`You chose rock.Computer chose ${computerMove} . ${result}`)
+        
+
+   ">rock</button>
+  <button onclick="
+  const randomMove1 = Math.random();
+
+  let computerMove1 = ''
+ if (randomMove1 > 0 && randomMove1 < 1/3) {
+     computerMove1 = 'rock'
+ } else if ( randomMove1 > 1/3 && randomMove1 < 2/3) {
+     computerMove1 = 'scissors'
+ } else if( randomMove1 > 2/3 && randomMove1 < 1){
+     computerMove1= 'paper'
+ }
+
+ let result2 = ''
+
+ if( computerMove1 === 'rock') {
+     result2='You win'
+ }else if (computerMove1 === 'scissors') {
+     result2='You lose'
+ }else if(computerMove1 === 'paper') {
+     result2='Its a tie'
+ }
+
+ alert(`You chose paper.Computer chose ${computerMove1} . ${result2}`)
+ ">paper</button>
+
+<button>scissors</button>
+</body>
+</html>
